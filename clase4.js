@@ -82,11 +82,17 @@ let ciudades = ["berlin","new york","paris","florida","medllin"];
 let deportes =["voleibol", "basket","futbol","balon mano"];
 
 let depor = deportes.map(hola=>{
-    return deportes.concat(" Es hermoso")
+    return hola.concat(" Es hermoso");
 })
 
 console.log(depor);
 
 let flir= carros.filter(letra=>{
-    return flir.startsWith("mcl")
+    return letra.startsWith("mcl");
+})
+
+console.log("Estos son los carros que comienza por mcl: "+ flir)
+
+motos.forEach(mt=>{
+    return
 })
