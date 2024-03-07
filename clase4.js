@@ -78,7 +78,7 @@ numeros.forEach(numero=>{
 
 let carros = ["ferrari 488","mclaren 765","nissan gtr r35", " bmw m4","mclaren p1"];
 let motos = ["zx10r","mt09","z900","R1","s1000r"];
-let ciudades = ["berlin","new york","paris","florida","medllin"];
+let reales = [12,23,546,123,3.5];
 let deportes =["voleibol", "basket","futbol","balon mano"];
 
 let depor = deportes.map(hola=>{
@@ -93,8 +93,14 @@ let flir= carros.filter(letra=>{
 
 console.log("Estos son los carros que comienza por mcl: "+ flir)
 
-let mots= motos.forEach(mt=>{
-    return mt.endsWith("09")
+let end = motos.forEach(mt=>{
+    return mt.endsWith("09");
 })
 
-console.log(mots);
+console.log(end);
+
+let ciu = reales.reduce((acomulador, valoractual)=>{
+    return acomulador+valoractual;
+})
+
+console.log(ciu);
