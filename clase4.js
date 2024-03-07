@@ -93,6 +93,8 @@ let flir= carros.filter(letra=>{
 
 console.log("Estos son los carros que comienza por mcl: "+ flir)
 
-motos.forEach(mt=>{
-    return
+let mots= motos.forEach(mt=>{
+    return mt.endsWith("09")
 })
+
+console.log(mots);
